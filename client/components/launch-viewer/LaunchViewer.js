@@ -16,11 +16,10 @@ import { LaunchItem } from '../launch-item/LaunchItem'
 import './LaunchViewer.sass'
 
 /**
- * @param {import('./LaunchViewer.d.ts').LaunchViewerProps} props
  * @returns {*}
  * @constructor
  */
-export const LaunchViewer = props => {
+export const LaunchViewer = () => {
   const [select, dispatch] = useModel(LaunchModel)
 
   const [filter, patchFilter] = usePatchedState({
@@ -117,17 +116,17 @@ export const LaunchViewer = props => {
               {
                 header: () => TableTemplates.header.as.label({ label: 'Rocket' }),
                 cell: item => TableTemplates.cell.as.label({ label: item['rocketName'] }),
-                width: 24
+                width: 12
               },
               {
                 header: () => TableTemplates.header.as.label({ label: 'Launch site' }),
                 cell: item => TableTemplates.cell.as.label({ label: item['siteName'] }),
-                width: 32
+                width: 12
               },
               {
                 header: () => TableTemplates.header.as.label({ label: 'Date' }),
                 cell: item => TableTemplates.cell.as.label({ label: item['date'].toLocaleDateString() }),
-                width: 16
+                width: 8
               }
             ]}
             noItemsLabel="No Launches Found"

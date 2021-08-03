@@ -1,12 +1,8 @@
 @import client/styles
 
 .vh-table-row
-  +as-flex
-
-  & > div
-    +to-basis(max)
-    +bordered-bottom
+  +as-grid
+  +bordered-bottom
 
   +themed
-    & > div
-      +with-border-depth
+    +with-border-depth

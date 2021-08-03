@@ -15,6 +15,9 @@ export const Body = ({ columns, items, noItemsLabel }) => {
   return (
     <div
       className="vh-table-body"
+      style={{
+        gridTemplateRows: `repeat(${items.length}, min-content)`
+      }}
     >
       {items.map(item => (
         <Row

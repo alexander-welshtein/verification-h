@@ -5,6 +5,10 @@ export const Header = ({ columns, items }) => {
   return (
     <div
       className="vh-table-header"
+      style={{
+        gridTemplateColumns: columns.map(column => column.width ? `${column.width}rem` : '1fr').join(' '),
+        gridTemplateRows: 'min-content'
+      }}
     >
       {columns.map(column => (
         <div
