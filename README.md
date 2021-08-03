@@ -21,7 +21,7 @@ Verification For Corporation-H
 * UI environment & basic design - Parallel implementations of UI elements, interactions, and design
 * Reusable and extensible components, elements, interactions
 * 🚲 Custom state management for UI elements
-* 🚲 Custom state management for business model components
+* 🚲 Custom state management for case components
 
 ### Problems & following objectives:
 
