@@ -2,8 +2,7 @@
 
 Verification For Corporation-H
 
-<img alt="version-badge" src="https://img.shields.io/badge/version-0.1.0-blue"/>
-<img alt="status-badge" src="https://img.shields.io/badge/status-in%20progress-yellow"/>
+<img alt="version-badge" src="https://img.shields.io/badge/version-0.1.0-blue"/> <img alt="status-badge" src="https://img.shields.io/badge/status-in%20progress-yellow"/>
 
 ### Disclaimers by conditions:
 
@@ -14,7 +13,7 @@ Verification For Corporation-H
 ### Extensions & the key points:
 
 * <img alt="React logo" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" width="16" height="16"/>
-  React, hm...
+  React, hmm...
 * <img alt="GraphQL logo" src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" width="16" height="16"/>
   GraphQL - Simple slice of the model
 * <img alt="SASS logo" src="https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png" width="16" height="16"/>
