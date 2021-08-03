@@ -1,0 +1,14 @@
+@import client/styles
+
+.vh-cell-as-label
+  +to-p(1)
+  +as-flex-started-and-centered
+  +as-border-box
+
+  & > p
+    +with-font-roboto
+    +without-margin
+
+  +themed
+    & > p
+      +with-text-secondary

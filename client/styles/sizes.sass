@@ -1,0 +1,123 @@
+@use 'sass:string'
+
+/* Position */
+
+@mixin to-t($value)
+  top: $value + rem
+
+@mixin to-r($value)
+  right: $value + rem
+
+@mixin to-b($value)
+  bottom: $value + rem
+
+@mixin to-l($value)
+  left: $value + rem
+
+@mixin to-z($value)
+  z-index: $value
+
+/* Size */
+
+@mixin to-w($value)
+  @if $value == "screen"
+    width: 100vw
+  @else if $value == "max"
+    width: 100%
+  @else if string.index($value + "", "px") or string.index($value + "", "%") or string.index($value + "", "em") or string.index($value + "", "rem")
+    width: $value
+  @else
+    width: $value + rem
+
+@mixin to-min-w($value)
+  @if $value == "screen"
+    min-width: 100vw
+  @else if $value == "max"
+    min-width: 100%
+  @else if string.index($value + "", "px") or string.index($value + "", "%") or string.index($value + "", "em") or string.index($value + "", "rem")
+    min-width: $value
+  @else
+    min-width: $value + rem
+
+@mixin to-h($value)
+  @if $value == "screen"
+    height: 100vh
+  @else if $value == "max"
+    height: 100%
+  @else if string.index($value + "", "px") or string.index($value + "", "%") or string.index($value + "", "em") or string.index($value + "", "rem")
+    height: $value
+  @else
+    height: $value + rem
+
+@mixin to-wh($value)
+  @if $value == "screen"
+    width: 100vw
+    height: 100vh
+  @else if $value == "max"
+    width: 100%
+    height: 100%
+  @else if string.index($value + "", "px") or string.index($value + "", "%") or string.index($value + "", "em") or string.index($value + "", "rem")
+    width: $value
+    height: $value
+  @else
+    width: $value + rem
+    height: $value + rem
+
+@mixin to-basis($value)
+  @if $value == "max"
+    flex-basis: 100%
+  @else
+    flex-basis: $value + rem
+
+/* Margin */
+
+@mixin without-margin
+  margin: 0
+
+@mixin to-m($value)
+  margin: $value + rem
+
+@mixin to-mt($value)
+  margin-top: $value + rem
+
+@mixin to-mr($value)
+  margin-right: $value + rem
+
+@mixin to-mb($value)
+  margin-bottom: $value + rem
+
+@mixin to-ml($value)
+  margin-left: $value + rem
+
+/* Padding */
+
+@mixin without-padding
+  padding: 0
+
+@mixin to-p($value)
+  padding: $value + rem
+
+@mixin to-px($value)
+  padding-left: $value + rem
+  padding-right: $value + rem
+
+@mixin to-py($value)
+  padding-top: $value + rem
+  padding-bottom: $value + rem
+
+@mixin to-pt($value)
+  padding-top: $value + rem
+
+@mixin to-pr($value)
+  padding-right: $value + rem
+
+@mixin to-pb($value)
+  padding-bottom: $value + rem
+
+@mixin to-pl($value)
+  padding-left: $value + rem
+
+/* Other */
+
+@mixin to-fs($value)
+  font-size: $value + rem

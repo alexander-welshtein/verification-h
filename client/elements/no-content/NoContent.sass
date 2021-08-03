@@ -1,0 +1,21 @@
+@import client/styles
+
+.vh-no-content
+  +as-flex-centered
+  +to-h(6)
+
+  & > div
+    +to-wh(3)
+    +to-p(.5)
+    +as-border-box
+
+  & > p
+    +with-font-roboto
+    +without-margin
+
+  +themed
+    & > div
+      +with-fill-primary
+
+    & > p
+      +with-text-primary

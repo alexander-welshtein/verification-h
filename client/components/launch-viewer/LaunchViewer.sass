@@ -1,0 +1,23 @@
+@import client/styles
+
+.vh-launch-viewer
+  +as-flex-column
+
+  & > .toolbar
+    +as-flex
+    +to-p(1)
+    +bordered-bottom
+
+    & > div:nth-child(1), & > div:nth-child(2)
+      +to-w(20)
+      +not-shrink
+
+    & > div:not(:last-child)
+      +to-mr(2)
+
+  & > .body
+    +to-h(24)
+
+  +themed
+    & > .toolbar
+      +with-border-depth

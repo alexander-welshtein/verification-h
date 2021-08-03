@@ -1,0 +1,74 @@
+@mixin hidden
+  display: none
+
+@mixin absolute
+  position: absolute
+
+@mixin relative
+  position: relative
+
+@mixin wrapped
+  flex-wrap: wrap
+
+@mixin as-block
+  display: block
+
+/* Flex */
+
+@mixin as-flex
+  display: flex
+
+@mixin as-flex-column
+  display: flex
+  flex-direction: column
+
+@mixin as-flex-centered
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin as-flex-started-and-centered
+  display: flex
+  justify-content: start
+  align-items: center
+
+@mixin as-flex-reversed
+  display: flex
+  flex-direction: row-reverse
+
+@mixin with-grow
+  flex-grow: 1
+
+@mixin not-grow
+  flex-grow: 0
+
+@mixin with-shrink
+  flex-shrink: 1
+
+@mixin not-shrink
+  flex-shrink: 0
+
+/* Grid */
+
+@mixin as-grid
+  display: grid
+
+@mixin area($name)
+  grid-area: $name
+
+@mixin as-border-box
+  box-sizing: border-box
+
+/* Text */
+
+@mixin with-text-start
+  text-align: start
+
+@mixin with-text-end
+  text-align: end
+
+@mixin with-text-center
+  text-align: center
+
+@mixin no-text-wrap
+  white-space: nowrap

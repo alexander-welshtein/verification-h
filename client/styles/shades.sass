@@ -1,0 +1,96 @@
+@import theme
+
+$accent: #9B59B6
+$shadow-light: hsla(0, 0%, 0%, 0.1)
+
+/* Equals */
+
+@mixin with-color($value)
+  color: $value
+
+@mixin with-bg-color($value)
+  background-color: $value
+
+/* Colors */
+
+@mixin with-text-accent
+  color: as('accent')
+
+@mixin with-text-primary
+  color: as('text-primary')
+
+@mixin with-text-secondary
+  color: as('text-secondary')
+
+@mixin with-text-contrast
+  color: as('text-contrast')
+
+@mixin with-text-pre-contrast
+  color: as('text-pre-contrast')
+
+@mixin with-text-depth
+  color: as('text-depth')
+
+/* Backgrounds */
+
+@mixin with-bg-accent
+  background-color: as('accent')
+
+@mixin with-bg-accent-ghost
+  background-color: as('accent-ghost')
+
+@mixin with-bg-base
+  background-color: as('bg-base')
+
+@mixin with-bg-surface-sm
+  background-color: as('bg-surface-sm')
+
+@mixin with-bg-surface-md
+  background-color: as('bg-surface-md')
+
+@mixin with-bg-surface-lg
+  background-color: as('bg-surface-lg')
+
+/* SVG colors */
+
+@mixin with-fill-primary
+  fill: as('text-primary')
+
+@mixin with-fill-secondary
+  fill: as('text-secondary')
+
+@mixin with-fill-depth
+  fill: as('text-depth')
+
+@mixin with-fill-contrast
+  fill: as('text-contrast')
+
+@mixin with-fill-pre-contrast
+  fill: as('text-pre-contrast')
+
+/* Shadows */
+
+@mixin with-shadow-sm
+  box-shadow: 0 .1em .2em 0 $shadow-light
+
+@mixin with-shadow-md
+  box-shadow: 0 .2em .8em 0 $shadow-light
+
+@mixin with-shadow-lg
+  box-shadow: 0 .8em 1.6em 0 $shadow-light
+
+@mixin with-shadow-xl
+  box-shadow: 0 1.6em 3.2em 0 $shadow-light
+
+/* Borders */
+
+@mixin with-border-contrast
+  border-color: as('text-contrast')
+
+@mixin with-border-depth
+  border-color: as('text-depth')
+
+/* Fonts */
+
+@mixin with-font-roboto
+  font-family: "Roboto", sans-serif

@@ -1,0 +1,114 @@
+@import ../../styles/index
+
+.vh-selector
+  +relative
+  +to-h(2.5)
+  +as-flex
+
+  & > .before
+    +to-h(max)
+    +as-flex-centered
+    +rounded-left-sm
+
+    & > .label
+      +to-w(4)
+      +as-border-box
+      +with-font-roboto
+      +without-margin
+      +not-shrink
+      +with-text-center
+      +no-text-wrap
+      +clipped
+
+      transition-property: width, padding, transform
+      transition-duration: .4s
+
+    & > .icon-edit
+      +to-w(0)
+      +to-p(0)
+      +to-h(max)
+      +to-scale(0)
+      +as-border-box
+      +not-shrink
+      +clipped
+
+      transition-property: width, padding, transform
+      transition-duration: .4s
+
+  & > .control
+    +to-wh(max)
+    +bordered-left
+
+    transition-property: background-color
+    transition-duration: .4s
+
+    & > input
+      +to-wh(max)
+      +to-pl(1)
+      +to-fs(1)
+      +as-border-box
+      +without-border
+      +without-outline
+      +without-bg
+
+  & > .after
+    +to-h(max)
+    +to-min-w(1)
+    +not-shrink
+    +rounded-right-sm
+
+    transition-property: background-color
+    transition-duration: .4s
+
+    & > .icon-clear
+      +to-w(2.5)
+      +to-p(.5)
+      +to-h(max)
+      +as-border-box
+      +not-shrink
+
+  & > .vh-popup
+    +to-t(3)
+
+  &-opened
+    & > .before
+      & > .label
+        +to-px(0)
+
+        // TODO: Shit | Current design dependency | #ihatecss
+        width: 0 !important
+
+      & > .icon-edit
+        +to-w(2.5)
+        +to-p(.5)
+        +to-scale(1)
+
+  +themed
+    & > .before
+      +with-bg-accent
+
+      & > .label
+        +with-text-pre-contrast
+
+      & > .icon-edit
+        +with-fill-pre-contrast
+
+    & > .control
+      +with-bg-accent-ghost
+      +with-border-depth
+
+      & > input
+        +with-text-contrast
+
+    & > .after
+      +with-bg-accent-ghost
+
+      & > .icon-clear
+        +with-fill-contrast
+
+    &-opened
+      & > .control
+        +with-bg-accent
+
+      & > .after
+        +with-bg-accent

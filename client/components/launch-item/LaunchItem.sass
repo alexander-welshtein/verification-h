@@ -1,0 +1,43 @@
+@import ../../styles/index
+
+.vh-launch-item
+  +as-grid
+  +with-font-roboto
+  +bordered-bottom
+
+  grid-template-rows: min-content 1fr
+  grid-template-columns: min-content 1fr 1fr
+  grid-template-areas: "cover title date" "cover description description"
+
+  & > .cover
+    +area(cover)
+    +to-wh(10)
+    +to-p(1)
+    +as-border-box
+    +with-bg-center
+    +with-bg-cover
+    +with-bg-content-box
+    +with-bg-no-repeat
+
+  & > .title
+    +area(title)
+    +to-p(1)
+
+  & > .description
+    +area(description)
+    +to-p(1)
+
+  & > .date
+    +area(date)
+    +to-p(1)
+    +with-text-end
+
+  +themed
+    & > .title
+      +with-text-primary
+
+    & > .description
+      +with-text-secondary
+
+    & > .date
+      +with-text-secondary

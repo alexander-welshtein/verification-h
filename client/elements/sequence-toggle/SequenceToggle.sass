@@ -1,0 +1,30 @@
+@import client/styles
+
+.vh-sequence-toggle
+  +as-flex-centered
+  +with-cursor-pointer
+
+  & > .icon
+    +rounded-sm
+    +to-wh(2.5)
+    +to-p(.5)
+    +to-mr(1)
+    +as-border-box
+
+  & > .value
+    +with-font-roboto
+
+  &-reversed
+    +as-flex-reversed
+
+    & > .icon
+      +to-mr(0)
+      +to-ml(1)
+
+  +themed
+    & > .value
+      +with-text-primary
+
+    & > .icon
+      +with-bg-accent
+      +with-fill-primary

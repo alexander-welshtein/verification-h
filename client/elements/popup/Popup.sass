@@ -1,0 +1,16 @@
+@import ../../styles/index
+
+.vh-popup
+  +hidden
+  +absolute
+  +bordered
+  +to-w(max)
+  +to-h(16)
+  +to-z(1024)
+  +with-shadow-sm
+
+  &-shown
+    +as-flex
+
+  +themed
+    +with-bg-surface-sm

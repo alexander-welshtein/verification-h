@@ -1,0 +1,9 @@
+type Launch {
+    id: String
+    name: String
+    date: String
+    description: String
+    thumbnail: String
+    rocketName: String
+    siteName: String
+}

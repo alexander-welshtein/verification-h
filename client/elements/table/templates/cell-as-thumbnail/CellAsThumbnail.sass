@@ -1,0 +1,22 @@
+@import client/styles
+
+.vh-cell-as-thumbnail
+  +as-flex-started-and-centered
+
+  & > div
+    +to-wh(6)
+    +to-p(1)
+    +to-mr(1)
+    +as-border-box
+    +with-bg-center
+    +with-bg-cover
+    +with-bg-content-box
+    +with-bg-no-repeat
+
+  & > p
+    +with-font-roboto
+    +without-margin
+
+  +themed
+    & > p
+      +with-text-secondary

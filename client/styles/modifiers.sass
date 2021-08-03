@@ -1,0 +1,71 @@
+/* Without */
+
+@mixin without-outline
+  outline: none
+
+@mixin without-border
+  border: none
+
+@mixin without-bg
+  background: none
+
+/* Border */
+
+@mixin bordered
+  border: 1px solid
+
+@mixin bordered-left
+  border-left: 1px solid
+
+@mixin bordered-bottom
+  border-bottom: 1px solid
+
+/* Round */
+
+@mixin rounded-sm
+  border-radius: .25rem
+
+@mixin rounded-md
+  border-radius: .5rem
+
+@mixin rounded-lg
+  border-radius: 1rem
+
+@mixin rounded-left-sm
+  border-top-left-radius: .25em
+  border-bottom-left-radius: .25rem
+
+@mixin rounded-right-sm
+  border-top-right-radius: .25rem
+  border-bottom-right-radius: .25rem
+
+/* Background */
+
+@mixin with-bg-cover
+  background-size: cover
+
+@mixin with-bg-center
+  background-position: center
+
+@mixin with-bg-content-box
+  background-origin: content-box
+
+@mixin with-bg-no-repeat
+  background-repeat: no-repeat
+
+
+/* Transformations */
+
+@mixin to-scale($value)
+  transform: scale($value)
+
+/* Other */
+
+@mixin clipped
+  overflow: hidden
+
+@mixin scrolled
+  overflow: scroll
+
+@mixin with-cursor-pointer
+  cursor: pointer
