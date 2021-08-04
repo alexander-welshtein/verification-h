@@ -34,6 +34,7 @@ Verification For Corporation-H
 
 * Comments
 * Mobile adaptations
+* Tests
 * Light theme & theme changing
 * Table interactions (sort, resizing)
 * Dashboard sidebar
