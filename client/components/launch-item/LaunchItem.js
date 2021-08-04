@@ -23,7 +23,7 @@ export const LaunchItem = ({ title, description, date, cover }) => {
       />
       <Label
         className="description"
-        value={description}
+        value={description || 'No description'}
         secondary
       />
       <Label
