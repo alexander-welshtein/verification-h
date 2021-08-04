@@ -7,8 +7,9 @@
   "scripts": {
     "launch": "node server/dist/bundle.js",
     "watch": "webpack --watch --mode development",
+    "build": "webpack --mode development",
     "serve": "npx webpack s --mode development",
-    "start": "npm run watch & npm run launch"
+    "start": "npm run build & npm run launch"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -19,11 +20,6 @@
     "koa-graphql": "^0.9.0",
     "graphql": "^15.5.1",
     "bent": "^7.3.12",
-    "@koa/router": "^10.1.0",
-    "@graphql-tools/schema": "^8.0.1",
-    "@svgr/webpack": "^5.5.0"
-  },
-  "devDependencies": {
     "webpack": "^5.47.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^4.0.0-rc.0",
@@ -39,6 +35,9 @@
     "@babel/core": "^7.14.8",
     "@babel/plugin-syntax-jsx": "^7.14.5",
     "@babel/plugin-transform-react-jsx": "^7.14.5",
-    "@babel/plugin-proposal-pipeline-operator": "^7.14.8"
+    "@babel/plugin-proposal-pipeline-operator": "^7.14.8",
+    "@koa/router": "^10.1.0",
+    "@graphql-tools/schema": "^8.0.1",
+    "@svgr/webpack": "^5.5.0"
   }
 }
