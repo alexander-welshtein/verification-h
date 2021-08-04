@@ -1,6 +1,9 @@
 {
   "name": "verification-h",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "launch": "node server/dist/bundle.js",
     "watch": "webpack --watch --mode development",
