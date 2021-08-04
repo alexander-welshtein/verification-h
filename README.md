@@ -4,6 +4,13 @@ Verification For Corporation-H
 
 <img alt="version-badge" src="https://img.shields.io/badge/version-0.1.0-blue"/> <img alt="status-badge" src="https://img.shields.io/badge/status-in%20progress-yellow"/>
 
+### How to make it work?
+
+* ▶️ npm install
+* ▶️ npm run watch
+* ▶️ npm run launch
+* 🪤 http://localhost:3000
+
 ### Disclaimers by conditions:
 
 * Don't use libraries? - Goes beyond my requirements for completing the assignment. Invented wheels are still enough 🚲
@@ -26,6 +33,7 @@ Verification For Corporation-H
 ### Problems & following objectives:
 
 * Comments
+* Mobile adaptations
 * Light theme & theme changing
 * Table interactions (sort, resizing)
 * Dashboard sidebar
