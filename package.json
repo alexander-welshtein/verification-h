@@ -7,9 +7,9 @@
   "scripts": {
     "launch": "node server/dist/bundle.js",
     "watch": "webpack --watch --mode development",
-    "build": "webpack --mode development",
     "serve": "npx webpack s --mode development",
-    "start": "npm run build & npm run launch"
+    "build": "webpack --mode development",
+    "start": "npm run launch"
   },
   "dependencies": {
     "react": "^17.0.2",
