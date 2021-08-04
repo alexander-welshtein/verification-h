@@ -27,7 +27,7 @@ export const LaunchViewer = () => {
     siteName: ''
   })
 
-  const [mode, setMode] = useState(ViewingMode.Table)
+  const [mode, setMode] = useState(ViewingMode.List)
 
   const launches = select(({ launches }) => launches)
 
