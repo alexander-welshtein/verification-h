@@ -9,7 +9,7 @@ Verification For Corporation-H
 * ▶️ npm install
 * ▶️ npm run watch
 * ▶️ npm run launch
-* 🪤 http://localhost:3000
+* 🪤 http://localhost:5000
 
 ### Disclaimers by conditions:
 

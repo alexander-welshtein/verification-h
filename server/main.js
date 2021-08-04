@@ -18,4 +18,4 @@ router.post('/bridge', graphqlHTTP({
   router.routes()
 ].forEach(application.use.bind(application))
 
-application.listen(3000)
+application.listen(process.env.PORT || 5000)
