@@ -4,6 +4,10 @@ Verification For Corporation-H
 
 <img alt="version-badge" src="https://img.shields.io/badge/version-0.1.0-blue"/> <img alt="status-badge" src="https://img.shields.io/badge/status-in%20progress-yellow"/>
 
+### Deployment
+
+[<img alt="Heroku logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg" width="64" height="16"/>](https://verification-h.herokuapp.com)
+
 ### How to make it work?
 
 * ▶️ npm install
