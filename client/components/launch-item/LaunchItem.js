@@ -28,7 +28,7 @@ export const LaunchItem = ({ title, description, date, cover }) => {
       />
       <Label
         className="date"
-        value={date.toLocaleString()}
+        value={date.toLocaleDateString()}
       />
     </div>
   )
