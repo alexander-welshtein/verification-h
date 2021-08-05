@@ -21,7 +21,7 @@ export const CellAsExpandableLabel = props => {
       onMouseLeave={() => setExpanded(false)}
     >
       <p
-        onClick={() => setExpanded(!expanded)}
+        onClick={() => setExpanded(true)}
       >
         {props.label}
       </p>
