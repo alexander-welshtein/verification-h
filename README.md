@@ -6,7 +6,7 @@ Verification For Corporation-H
 
 ### Deployment
 
-[<img alt="Heroku logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg" width="64" height="16"/>](https://verification-h.herokuapp.com)
+[<img alt="Heroku logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg" width="96" height="24"/>](https://verification-h.herokuapp.com)
 
 ### How to make it work?
 
