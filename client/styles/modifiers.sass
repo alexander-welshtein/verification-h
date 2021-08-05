@@ -14,6 +14,9 @@
 @mixin bordered
   border: 1px solid
 
+@mixin bordered-right
+  border-right: 1px solid
+
 @mixin bordered-left
   border-left: 1px solid
 
@@ -41,16 +44,19 @@
 
 /* Background */
 
-@mixin with-bg-cover
+@mixin with-bg($url)
+  background-image: url($url)
+
+@mixin as-bg-cover
   background-size: cover
 
 @mixin with-bg-center
   background-position: center
 
-@mixin with-bg-content-box
+@mixin as-bg-content-box
   background-origin: content-box
 
-@mixin with-bg-no-repeat
+@mixin no-bg-repeat
   background-repeat: no-repeat
 
 

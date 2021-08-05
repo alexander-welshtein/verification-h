@@ -45,6 +45,10 @@ const clientConfig = {
       {
         test: /\.svg$/,
         use: '@svgr/webpack'
+      },
+      {
+        test: /\.png$/,
+        type: 'asset/resource'
       }
     ]
   }
