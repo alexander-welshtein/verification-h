@@ -12,7 +12,7 @@ export const Row = ({ columns, item }) => {
     <div
       className="vh-table-row"
       style={{
-        gridTemplateColumns: columns.map(column => column.width ? `${column.width}rem` : '1fr').join(' '),
+        gridTemplateColumns: columns.map(column => column.width ? `${column.width}rem` : 'minmax(0, 1fr)').join(' '),
         gridTemplateRows: 'min-content'
       }}
     >

@@ -1,0 +1,24 @@
+@import client/styles
+
+.vh-cell-as-expandable-label
+  +relative
+  +to-p(1)
+  +as-flex-started-and-centered
+  +as-border-box
+
+  & > p
+    +clipped
+    +with-font-roboto
+    +with-text-ellipsis
+    +without-margin
+    +no-text-wrap
+    +with-cursor-pointer
+
+  &-expanded
+    & > p
+      +with-text-wrap
+
+
+  +themed
+    & > p
+      +with-text-secondary

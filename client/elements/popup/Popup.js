@@ -11,7 +11,6 @@ import './Popup.sass'
 export const Popup = props => {
   const className = composeClass(
     'vh-popup',
-    'vh-popup-dark',
     props.shown && 'vh-popup-shown'
   )
 

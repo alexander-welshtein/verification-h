@@ -111,7 +111,7 @@ export const LaunchViewer = () => {
               },
               {
                 header: () => TableTemplates.header.as.label({ label: 'Description' }),
-                cell: item => TableTemplates.cell.as.label({ label: item['description'] || 'No description' })
+                cell: item => TableTemplates.cell.as.expandableLabel({ label: item['description'] || 'No description' })
               },
               {
                 header: () => TableTemplates.header.as.label({ label: 'Rocket' }),

@@ -1,20 +1,16 @@
 export const Bench = {
   aggregate: {
-    basic: (items, by, as) => {
-      as ||= by
+    basic: (items, by, as = by) => Object.values(
+      items.reduce((result, item, id) => {
+        const key = by(item)
+        const value = as(item)
 
-      return Object.values(
-        items.reduce((result, item, id) => {
-          const key = by(item)
-          const value = as(item)
-
-          return ({
-            ...result,
-            [key]: { id, key, value, items: [...result[key]?.['items'] || [], item] }
-          })
-        }, {})
-      )
-    }
+        return ({
+          ...result,
+          [key]: { id, key, value, items: [...result[key]?.['items'] || [], item] }
+        })
+      }, {})
+    )
   },
 
   search: {

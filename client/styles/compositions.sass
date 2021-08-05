@@ -56,9 +56,6 @@
 @mixin area($name)
   grid-area: $name
 
-@mixin as-border-box
-  box-sizing: border-box
-
 /* Text */
 
 @mixin with-text-start
@@ -70,5 +67,16 @@
 @mixin with-text-center
   text-align: center
 
+@mixin with-text-ellipsis
+  text-overflow: ellipsis
+
 @mixin no-text-wrap
   white-space: nowrap
+
+@mixin with-text-wrap
+  white-space: normal
+
+/* Other */
+
+@mixin as-border-box
+  box-sizing: border-box
