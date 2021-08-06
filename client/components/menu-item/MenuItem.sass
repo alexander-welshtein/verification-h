@@ -1,0 +1,29 @@
+@import client/styles
+
+.vh-menu-item
+  +to-h(4)
+  +as-flex
+
+  & > div
+    +to-wh(4)
+    +to-p(1)
+    +as-border-box
+    +not-shrink
+
+  & > p
+    +without-margin
+
+  +themed
+    +shadowed-md
+
+    & > div
+      +with-fill-pre-contrast
+
+    & > p
+      +with-text-primary
+
+    &-selected
+      +with-bg-accent-ghost
+
+      & > div
+        +with-fill-accent

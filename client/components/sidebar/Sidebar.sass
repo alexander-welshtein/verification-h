@@ -1,0 +1,29 @@
+@import client/styles
+
+.vh-sidebar
+  +to-ml(-4)
+  +to-w(4)
+  +as-flex-column
+  +not-shrink
+  +clipped
+
+  +animate-forward(sidebar-slide, 1)
+
+  & > .logo
+    +to-p(.5)
+    +to-wh(4)
+    +as-border-box
+    +with-bg("../../../assets/layout-glass-0.png")
+    +as-bg-content-box
+    +as-bg-cover
+    +no-bg-repeat
+    +animated-as-emergence
+
+  +themed
+    +with-bg-surface-sm
+
+@keyframes sidebar-slide
+  from
+    margin-left: -4rem
+  to
+    margin-left: 0

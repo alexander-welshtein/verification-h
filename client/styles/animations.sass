@@ -1,0 +1,14 @@
+@mixin animate-forward($name, $duration)
+  animation-name: $name
+  animation-duration: $duration + s
+  animation-fill-mode: forwards
+
+@mixin animated-as-emergence
+  animation-name: animation-emergence
+  animation-duration: 1s
+
+@keyframes animation-emergence
+  from
+    opacity: 0
+  to
+    opacity: 1

@@ -29,7 +29,7 @@ $shadow-light: hsla(0, 0%, 0%, 0.1)
   color: as('text-pre-contrast')
 
 @mixin with-text-depth
-  color: as('text-depth')
+  color: as('depth')
 
 /* Backgrounds */
 
@@ -39,19 +39,25 @@ $shadow-light: hsla(0, 0%, 0%, 0.1)
 @mixin with-bg-accent-ghost
   background-color: as('accent-ghost')
 
-@mixin with-bg-base
-  background-color: as('bg-base')
+@mixin with-bg-depth
+  background-color: as('depth')
 
 @mixin with-bg-surface-sm
-  background-color: as('bg-surface-sm')
+  background-color: as('surface-sm')
 
 @mixin with-bg-surface-md
-  background-color: as('bg-surface-md')
+  background-color: as('surface-md')
 
 @mixin with-bg-surface-lg
-  background-color: as('bg-surface-lg')
+  background-color: as('surface-lg')
 
 /* SVG colors */
+
+@mixin with-fill-accent
+  fill: as('accent')
+
+@mixin with-fill-accent-ghost
+  fill: as('accent-ghost')
 
 @mixin with-fill-primary
   fill: as('text-primary')
@@ -60,7 +66,7 @@ $shadow-light: hsla(0, 0%, 0%, 0.1)
   fill: as('text-secondary')
 
 @mixin with-fill-depth
-  fill: as('text-depth')
+  fill: as('depth')
 
 @mixin with-fill-contrast
   fill: as('text-contrast')
@@ -68,18 +74,21 @@ $shadow-light: hsla(0, 0%, 0%, 0.1)
 @mixin with-fill-pre-contrast
   fill: as('text-pre-contrast')
 
+@mixin with-fill-surface-sm
+  fill: as('surface-sm')
+
 /* Shadows */
 
-@mixin with-shadow-sm
+@mixin shadowed-sm
   box-shadow: 0 .1em .2em 0 $shadow-light
 
-@mixin with-shadow-md
+@mixin shadowed-md
   box-shadow: 0 .2em .8em 0 $shadow-light
 
-@mixin with-shadow-lg
+@mixin shadowed-lg
   box-shadow: 0 .8em 1.6em 0 $shadow-light
 
-@mixin with-shadow-xl
+@mixin shadowed-xl
   box-shadow: 0 1.6em 3.2em 0 $shadow-light
 
 /* Borders */
@@ -88,7 +97,7 @@ $shadow-light: hsla(0, 0%, 0%, 0.1)
   border-color: as('text-contrast')
 
 @mixin with-border-depth
-  border-color: as('text-depth')
+  border-color: as('depth')
 
 /* Fonts */
 
