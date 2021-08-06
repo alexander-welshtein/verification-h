@@ -4,7 +4,7 @@ Verification For Corporation-H
 
 <img alt="version-badge" src="https://img.shields.io/badge/version-0.1.0-blue"/> <img alt="status-badge" src="https://img.shields.io/badge/status-in%20progress-yellow"/>
 
-### Deployment
+### Deployments
 
 [<img alt="Heroku logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg" width="96" height="24"/>](https://verification-h.herokuapp.com)
 
@@ -15,13 +15,13 @@ Verification For Corporation-H
 * ▶️ npm run launch
 * 🪤 http://localhost:5000
 
-### Disclaimers by conditions:
+### Disclaimers by conditions
 
 * Don't use libraries? - Goes beyond my requirements for completing the assignment. Invented wheels are still enough 🚲
 * Will using TypeScript be a plus? - For me, TypeScript is a moody past. Now plain JS love with FP intentions & TS type
   declarations.
 
-### Extensions & the key points:
+### Extensions & the key points
 
 * <img alt="React logo" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" width="16" height="16"/>
   React, hmm...
@@ -34,7 +34,7 @@ Verification For Corporation-H
 * 🚲 Custom state management for UI elements
 * 🚲 Custom state management for case components
 
-### Problems & following objectives:
+### Problems & following objectives
 
 * Comments
 * Mobile adaptations
