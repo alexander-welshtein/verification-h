@@ -6,7 +6,7 @@ export function usePatchedState<T>(initial?: T): [state: T, patchState: (value: 
 
 export function useRefresh(): () => void
 
-export function useModel<M>(model: M): [select: (select: (model: {}) => any) => any, dispatch: (action: string, payload?: any) => any]
+export function useModel<M, S extends keyof M>(model: M): [state: S, actions: {}]
 
 export function useDispatchedState<T>(
   initial: T,

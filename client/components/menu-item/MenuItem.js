@@ -16,6 +16,7 @@ export const MenuItem = props => {
   return (
     <div
       className={className}
+      onClick={props.onClick}
     >
       <div>
         {props.icon}

@@ -1,17 +1,20 @@
 import React from 'react'
+import { LaunchViewer } from '../launch-viewer/LaunchViewer'
+import { WorkspacePlate } from '../workspace-plate/WorkspacePlate'
 import './Workspace.sass'
 
 /**
- * @param {import('./Workspace.d.ts').WorkspaceProps} props
  * @returns {*}
  * @constructor
  */
-export const Workspace = props => {
+export const Workspace = () => {
   return (
     <div
       className="vh-workspace"
     >
-      {props.children}
+      <WorkspacePlate>
+        <LaunchViewer/>
+      </WorkspacePlate>
     </div>
   )
 }

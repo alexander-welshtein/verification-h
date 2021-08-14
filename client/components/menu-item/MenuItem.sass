@@ -2,6 +2,7 @@
 
 .vh-menu-item
   +to-h(4)
+  +to-z(1)
   +as-flex
 
   & > div
@@ -10,20 +11,21 @@
     +as-border-box
     +not-shrink
 
+    transition: fill .2s
+
   & > p
     +without-margin
 
   +themed
-    +shadowed-md
-
     & > div
-      +with-fill-pre-contrast
+      +with-fill-primary
 
     & > p
       +with-text-primary
 
     &-selected
-      +with-bg-accent-ghost
-
       & > div
         +with-fill-accent
+
+    &:not(&-selected)
+      +with-cursor-pointer

@@ -22,18 +22,21 @@ export const useModel = model => {
 
   useEffect((handler = () => refresh()) => (model.on = [...model.on || [], handler] || true) && (() => model.on = model.on.filter(each => each !== handler)), [])
 
+  const apply = patch => {
+    model.state = { ...model.state, ...patch }
+    model.on?.forEach(each => each())
+  }
+
   return [
-    select => select(model.state),
-    (action, payload) => {
-      const apply = patch => {
-        model.state = { ...model.state, ...patch }
-        model.on?.forEach(each => each())
-      }
-
-      const patch = model.actions[action](model.state, payload)
-
-      patch['then'] ? patch.then(apply) : apply(patch)
-    }
+    model.state,
+    Object
+      .entries(model.actions)
+      .reduce((result, [key, action]) => ({
+        ...result, [key]: payload => {
+          const patch = action(model.state, payload)
+          patch['then'] ? patch.then(apply) : apply(patch)
+        }
+      }), {})
   ]
 }
 

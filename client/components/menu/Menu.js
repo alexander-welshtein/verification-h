@@ -1,23 +1,33 @@
 import React from 'react'
+import { useModel } from '../../helpers/Hooks'
+import { UIModel } from '../../models/UI'
 import { MenuItem } from '../menu-item/MenuItem'
 import './Menu.sass'
 
 /**
- * @param props {import('./Menu.d.ts').MenuProps}
  * @returns {*}
  * @constructor
  */
-export const Menu = props => {
+export const Menu = () => {
+  const [{ items, selector }, { changeSelector }] = useModel(UIModel)
+
   return (
     <div
       className="vh-menu"
     >
-      {props.items.map((item, index) => (
+      <div
+        className="pointer"
+        style={{
+          top: (items.findIndex(selector) * 4) + 'rem'
+        }}
+      />
+      {items.map((item, index) => (
         <MenuItem
           key={index}
           label={item.label}
           icon={item.icon}
-          selected={props.selector(item)}
+          selected={selector(item)}
+          onClick={() => changeSelector({ selector: ({ label }) => label === item['label'] })}
         />
       ))}
     </div>

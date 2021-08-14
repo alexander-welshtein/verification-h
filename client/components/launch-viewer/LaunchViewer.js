@@ -20,7 +20,7 @@ import './LaunchViewer.sass'
  * @constructor
  */
 export const LaunchViewer = () => {
-  const [select, dispatch] = useModel(LaunchModel)
+  const [{ launches }, { loadLaunches }] = useModel(LaunchModel)
 
   const [filter, patchFilter] = usePatchedState({
     rocketName: '',
@@ -29,13 +29,11 @@ export const LaunchViewer = () => {
 
   const [mode, setMode] = useState(ViewingMode.List)
 
-  const launches = select(({ launches }) => launches)
-
   const filterByRocketName = launches => filter.rocketName.length ? launches.filter(launch => launch.rocketName === filter.rocketName) : launches
   const filterByLaunchSite = launches => filter.siteName.length ? launches.filter(launch => launch.siteName === filter.siteName) : launches
   const displayedLaunches = launches |> filterByRocketName |> filterByLaunchSite
 
-  useEffect(() => dispatch('loadLaunches'), [])
+  useEffect(() => loadLaunches(), [])
 
   return (
     <div

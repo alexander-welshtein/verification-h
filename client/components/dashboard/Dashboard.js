@@ -1,7 +1,7 @@
 import React from 'react'
-import { LaunchViewer } from '../launch-viewer/LaunchViewer'
+import { Pager } from '../pager/Pager'
+import { SettingsPanel } from '../settings-panel/SettingsPanel'
 import { Sidebar } from '../sidebar/Sidebar'
-import { WorkspacePlate } from '../workspace-plate/WorkspacePlate'
 import { Workspace } from '../workspace/Workspace'
 import './Dashboard.sass'
 
@@ -15,11 +15,10 @@ export const Dashboard = () => {
       className="vh-dashboard"
     >
       <Sidebar/>
-      <Workspace>
-        <WorkspacePlate>
-          <LaunchViewer/>
-        </WorkspacePlate>
-      </Workspace>
+      <Pager>
+        <Workspace/>
+        <SettingsPanel/>
+      </Pager>
     </div>
   )
 }

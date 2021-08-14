@@ -1,0 +1,12 @@
+@import client/styles
+
+.vh-pager
+  +relative
+  +to-wh(max)
+  +clipped
+
+  & > .content
+    +to-wh(max)
+    +absolute
+
+    transition: left .4s

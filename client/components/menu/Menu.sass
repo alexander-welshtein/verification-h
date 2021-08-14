@@ -1,4 +1,18 @@
 @import client/styles
 
 .vh-menu
-  +as-flex-column
+  +relative
+  +as-flex-column-centered-and-started
+
+  & > .pointer
+    +absolute
+    +to-w(4)
+    +to-h(4)
+    +to-t(0)
+
+    transition: top .2s
+
+  +themed
+    & > .pointer
+      +shadowed-md
+      +with-bg-accent-ghost
