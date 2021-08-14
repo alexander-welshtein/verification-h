@@ -5,11 +5,12 @@
     "node": "16.x"
   },
   "scripts": {
-    "launch": "node server/dist/bundle.js",
+    "run": "node server/dist/bundle.js",
     "watch": "webpack --watch --mode development",
     "serve": "npx webpack s --mode development",
+    "watch & run": "npm run watch & npm run run",
     "build": "webpack --mode production",
-    "start": "npm run launch"
+    "start": "npm run run"
   },
   "dependencies": {
     "react": "^17.0.2",
